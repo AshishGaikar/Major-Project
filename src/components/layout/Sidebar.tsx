@@ -31,12 +31,16 @@ export const Sidebar: React.FC = () => {
   return (
     <aside className="glass-card flex h-full w-64 flex-col border-0 bg-white/90 dark:bg-slate-950/80">
       <div className="flex items-center gap-2 px-5 pt-5 pb-4">
-        <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+        <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-emerald-400 text-white shadow-soft">
           <span className="text-lg font-black">₹</span>
         </div>
         <div>
-          <div className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">FinScope</div>
-          <div className="text-xs text-slate-500 dark:text-slate-400">AI Financial Planner</div>
+          <div className="bg-gradient-to-r from-blue-600 via-emerald-500 to-cyan-500 bg-clip-text text-sm font-semibold tracking-tight text-transparent dark:from-blue-400 dark:via-emerald-300 dark:to-cyan-300">
+            FinScope&nbsp;AI
+          </div>
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            Personal money OS
+          </div>
         </div>
       </div>
       <nav className="mt-2 flex-1 space-y-1 px-3 pb-4 text-sm">

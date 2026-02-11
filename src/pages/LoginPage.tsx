@@ -33,16 +33,20 @@ export const LoginPage: React.FC = () => {
       <div className="w-full max-w-md space-y-6">
         <div className="text-center">
           <Link to="/" className="inline-flex items-center justify-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-emerald-400 text-white shadow-soft">
               <span className="text-lg font-black">₹</span>
             </div>
             <div>
-              <div className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">FinScope</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">AI Financial Planner</div>
+              <div className="bg-gradient-to-r from-blue-600 via-emerald-500 to-cyan-500 bg-clip-text text-sm font-semibold tracking-tight text-transparent dark:from-blue-400 dark:via-emerald-300 dark:to-cyan-300">
+                FinScope&nbsp;AI
+              </div>
+              <div className="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                Personal money OS
+              </div>
             </div>
           </Link>
         </div>
-        <Card title="Welcome back" subtitle="Sign in to view your dashboard and personalised insights.">
+        <Card title="Welcome back, Ashish" subtitle="Sign in to continue where you left off with your finances.">
           <form className="space-y-4" onSubmit={handleSubmit}>
             <Input
               label="Email"

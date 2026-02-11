@@ -8,22 +8,29 @@ export const LandingPage: React.FC = () => {
       <div className="mx-auto flex max-w-6xl flex-col px-4 pb-16 pt-6 sm:px-6 lg:px-8">
         <header className="flex items-center justify-between py-3">
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-emerald-400 text-white shadow-soft">
               <span className="text-lg font-black">₹</span>
             </div>
             <div>
-              <div className="text-sm font-semibold tracking-tight">FinScope</div>
-              <div className="text-xs text-slate-400">AI Financial Planner</div>
+              <div className="bg-gradient-to-r from-blue-300 via-emerald-200 to-cyan-200 bg-clip-text text-sm font-semibold tracking-tight text-transparent">
+                FinScope&nbsp;AI
+              </div>
+              <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
+                Personal money OS
+              </div>
             </div>
           </Link>
           <div className="flex items-center gap-2">
             <Link to="/login">
-              <Button variant="ghost" className="text-xs text-slate-200 hover:bg-slate-800">
+              <Button
+                variant="secondary"
+                className="text-xs px-4 py-2 font-medium bg-transparent text-white border border-white/80 hover:bg-white/10 hover:text-white"
+              >
                 Log in
               </Button>
             </Link>
             <Link to="/register">
-              <Button className="text-xs">Get started</Button>
+              <Button className="text-xs px-4 py-2 font-medium">Get started</Button>
             </Link>
           </div>
         </header>
